@@ -27,23 +27,18 @@ fake_moves_db = [
 app = FastAPI()
 
 
-@app.get("/models/{move_type}")
-async def get_model(move_type: Item):
-    return {"model_name": move_type, "message": "Deep Learning FTW!"}
+@app.get("/move/{move_id}")
+async def read_item(move_id):
+    return {"move_id": move_id}
 
 
-@app.get("/items/{item_id}")
-async def read_item(item_id):
-    return {"item_id": item_id}
-
-
-@app.get("/items/")
+@app.get("/move/")
 async def read_item(skip: int = 0, limit: int = 10):
     return fake_moves_db[skip : skip + limit]
 
 
-@app.post("/items/")
-async def create_item(item: Move):
-    item_dict = item.dict()
-    fake_moves_db.append(item)
-    return item_dict
+@app.post("/move/")
+async def create_item(move: Move):
+    move_dict = move.dict()
+    fake_moves_db.append(move)
+    return move_dict

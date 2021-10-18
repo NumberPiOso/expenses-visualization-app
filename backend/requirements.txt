@@ -1,2 +1,4 @@
+black==21.9b
 fastapi==0.70.0
+flake8==4.0.1
 uvicorn==0.15.0

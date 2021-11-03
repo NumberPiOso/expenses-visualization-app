@@ -1,6 +1,10 @@
 # Expenses
 
 I plan to create a expenses visualization web application for personal use.
+This should help me keep track of my incomes and expenses, helping me to take better
+decisions.
+  
+  
 I think I will do it using FastAPI and Postgresql at backend, besides that,
 may god help me.
 

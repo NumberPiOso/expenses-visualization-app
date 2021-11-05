@@ -4,6 +4,9 @@
 # Database for development
 sql_app.db
 
+# Ignore custom template that i am using for front-end dev
+_TEMPLATE.html
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

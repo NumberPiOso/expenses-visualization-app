@@ -45,3 +45,6 @@ const getAllMoves = async () => {
     }
 
 }
+
+
+document.addEventListener('DOMContentLoaded', addMovesToList, false);

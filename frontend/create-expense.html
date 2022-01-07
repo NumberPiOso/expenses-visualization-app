@@ -54,7 +54,7 @@
         <form id="CreateExpense">
             <div class="form-group">
                 <label for="inputType">Type of movement</label>
-                <select class="form-control" name="inputType" id="inputType">
+                <select class="form-control" name="inputType" id="inputType" required>
                     <option>Income</option>
                     <option>Expense</option>
                 </select>
@@ -63,7 +63,7 @@
             <div class="form-group">
                 <label for="inputValue">Value</label>
                 <input type="number" class="form-control" name="inputValue" id="inputValue"
-                    placeholder="Value of transaction">
+                    placeholder="Value of transaction" required>
             </div>
 
             <div class="form-group">

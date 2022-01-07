@@ -17,6 +17,8 @@
         type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <!-- Axios (to handle requests)-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 
 <body id="page-top">
@@ -71,6 +73,7 @@
                 <textarea class="form-control" name="inputDescription" id="inputDescription" rows="3"></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Save expense</button>
+            <div class="d-none alert alert-success" role="alert" id="savedMoveNote"></div>
         </form>
     </div>
     <!-- </div> -->

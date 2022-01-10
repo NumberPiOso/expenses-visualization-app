@@ -15,5 +15,7 @@ may god help me.
 - [X] Create models and connect it to the database
 - [X] Create simple frontend
 - [ ] Deploy
+- [ ] Correct database 
+- [ ] CI/CD
 - [ ] Create users and link them to the movements
 - [ ] Create visualizations of expenses using [plotly](https://plotly.com/)

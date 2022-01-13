@@ -14,7 +14,10 @@ may god help me.
 - [X] Sample expenses backend api
 - [X] Create models and connect it to the database
 - [X] Create simple frontend
-- [ ] Deploy
+- [ ] Deploy MVP
+    - [X] Docker frontend
+    - [ ] Docker backend
+    - [ ] Docker integration
 - [ ] Correct database 
 - [ ] CI/CD
 - [ ] Create users and link them to the movements

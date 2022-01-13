@@ -18,6 +18,7 @@ may god help me.
     - [X] Docker frontend
     - [X] Docker backend
     - [ ] Docker integration
+    - [ ] Deploy on Azure 
 - [ ] Correct database 
 - [ ] CI/CD
 - [ ] Create users and link them to the movements

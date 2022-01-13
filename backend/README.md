@@ -14,3 +14,17 @@ To run development server
 ```Bash
 uvicorn app.main:app --reload
 ```
+
+## Docker
+
+Build backend docker app
+
+```Bash
+docker build -t expenses-backend .
+```
+
+and run it
+
+```Bash
+docker run -d -p 80:80 expenses-backend
+```

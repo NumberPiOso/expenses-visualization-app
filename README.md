@@ -16,7 +16,7 @@ may god help me.
 - [X] Create simple frontend
 - [ ] Deploy MVP
     - [X] Docker frontend
-    - [ ] Docker backend
+    - [X] Docker backend
     - [ ] Docker integration
 - [ ] Correct database 
 - [ ] CI/CD

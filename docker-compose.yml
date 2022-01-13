@@ -1,0 +1,30 @@
+version: '3'
+
+# Pablo Osorio, using https://siddharth-lakhara.medium.com/dockerizing-a-full-stack-js-app-ceb99411996e
+
+services:
+  frontend:
+    build: ./frontend # path to dockerfile
+    ports:
+      # Port binding to host from docker container
+      - "8080:80"
+    container_name: frontend-expenses
+    restart: always # What to do if container crashes
+    links:
+      - backend
+
+  backend:
+    build: ./backend
+    ports:
+      - "80:80"
+    container_name: backend-expenses
+    restart: always
+    # links: null
+    #     - db
+
+    # db:
+    #   image: postgres:11.6-alpine
+    #   ports:
+    #     - "5432:5432"
+    #   container_name: database-docker
+    #   restart: always

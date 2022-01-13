@@ -2,7 +2,7 @@
 // 05/01/2022
 // Custom defined functions for the API
 
-const url = "http://127.0.0.1:8000"
+const url = "http://backend:80"
 
 const postMove = async (move) => {
     try {

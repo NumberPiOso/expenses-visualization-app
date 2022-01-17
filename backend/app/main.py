@@ -15,11 +15,13 @@ models.Base.metadata.create_all(bind=engine)
 app = FastAPI()
 
 origins = [
+    # TODO Disallow wildcard '*'
     "*",
-    "http://localhost",
-    "http://localhost:8080",
-    "http://127.0.0.1:8000",
-    "http://127.0.0.1:8000/",
+    # "http://localhost",
+    # "http://localhost:8080",
+    # "http://127.0.0.1:8000",
+    # "http://127.0.0.1:8000",
+    # "http://frontend:8080",
 ]
 
 app.add_middleware(

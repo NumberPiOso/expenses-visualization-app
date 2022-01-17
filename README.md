@@ -23,3 +23,10 @@ may god help me.
 - [ ] CI/CD
 - [ ] Create users and link them to the movements
 - [ ] Create visualizations of expenses using [plotly](https://plotly.com/)
+
+
+## Development
+
+```Bash
+docker-compose up --build
+```

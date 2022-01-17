@@ -46,3 +46,25 @@ function handleSubmit(event) {
 
 const form = document.querySelector('#CreateExpense');
 form.addEventListener('submit', handleSubmit);
+
+
+// GENERATE RANDOM MOVES
+
+const postRandomMoves = async () => {
+    try {
+        const res = await axios.post(`${url}/api/move/generate-random/`)
+        return res.data;
+    } catch (e) {
+        console.log(e)
+    }
+
+}
+
+button_gen_random = document.querySelector('#GenerateRandom');
+
+const handleButtonGenerateRandom = () => {
+    postRandomMoves();
+    button_gen_random.classList.add("disabled");
+}
+
+addEventListener('click', handleButtonGenerateRandom)

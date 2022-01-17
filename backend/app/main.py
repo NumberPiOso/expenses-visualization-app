@@ -64,5 +64,18 @@ async def create_item(move: schemas.MoveCreate, db: Session = Depends(get_db)):
     return move_dict
 
 
+@app.post("/api/move/generate-random")
+async def generate_random_items(db: Session = Depends(get_db)):
+    n = 100
+    for i in range(n):
+        move = schemas.MoveCreate(
+            type_move="Expense" if i % 2 == 0 else "Income",
+            value=i * 100,
+            description=None,
+        )
+        crud.create_move(db, move)
+    return {"Status": "OK"}
+
+
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)

@@ -7,7 +7,7 @@ services:
     build: ./frontend # path to dockerfile
     ports:
       # Port binding to host from docker container
-      - "8080:80"
+      - "80:80"
     container_name: frontend-expenses
     restart: always # What to do if container crashes
     links:
@@ -16,7 +16,7 @@ services:
   backend:
     build: ./backend
     ports:
-      - "80:80"
+      - "8000:80"
     container_name: backend-expenses
     restart: always
     # links: null

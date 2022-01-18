@@ -18,6 +18,8 @@ may god help me.
     - [X] Docker frontend
     - [X] Docker backend
     - [ ] Docker integration
+        - [ ] Mount volumes on docker-compose
+        - [ ] Correctly configure url in javascript
     - [ ] Deploy on Azure 
 - [ ] Correct database 
 - [ ] CI/CD

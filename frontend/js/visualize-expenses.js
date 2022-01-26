@@ -2,7 +2,7 @@
 // 03/01/2022
 // Custom defined functions for the API
 
-const url = "http://localhost:8000"
+const url = "http://backend:8000"
 
 const expenseList = document.querySelector('#ExpenseList');
 

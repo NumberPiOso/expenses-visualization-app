@@ -15,8 +15,10 @@ services:
 
   backend:
     build: ./backend
+    environment:
+      - PORT=8000
     ports:
-      - "8000:80"
+      - "8000:8000"
     container_name: backend-expenses
     restart: always
     # links: null

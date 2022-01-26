@@ -4,7 +4,10 @@ version: '3'
 
 services:
   frontend:
+    image: acrexptest.azurecr.io/expenses-front:v1
     build: ./frontend # path to dockerfile
+    # volumes:
+    #   - frontend/:/usr/share/nginx/html
     ports:
       # Port binding to host from docker container
       - "80:80"
@@ -14,6 +17,7 @@ services:
       - backend
 
   backend:
+    image: acrexptest.azurecr.io/expenses-back:v1
     build: ./backend
     environment:
       - PORT=8000
